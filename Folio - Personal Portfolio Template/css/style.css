@@ -1,0 +1,783 @@
+/*----------------------------------------------------
+	1. CSS Reset
+------------------------------------------------------*/
+* {
+	padding:0;
+	margin:0;
+}
+html {
+	font-size: 100%; 
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering: optimizelegibility; 
+}
+body {
+	color:#837D90;
+	font-family: KozGoPro-regular;
+	font-weight: 400;
+	position:relative;
+	background:#fff;
+	width:100%;
+	height:100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+/* Preloader */
+#preloader {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:9999999999; /* makes sure it stays on top */
+}
+#status {
+	width:200px;
+	height:200px;
+	color:#fff;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image: url( ../images/preloader.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+#status p{text-align:center;}
+/* Preloader */
+
+h1{
+
+}
+h2{
+    font-size:76px;
+}
+h3{
+    font-size:39px;
+}
+h4{
+}
+h5{
+
+}
+h6{
+	font-size: 18px;
+	color: #616169;
+}
+p{
+    font-size: 14px;
+    color: #797782;
+}
+@font-face {
+    font-family: KozGoPro-bold;
+    src: url(../fonts/KozGoPro-Heavy_8.otf);
+}
+@font-face {
+    font-family: KozGoPro-regular;
+    src: url(../fonts/KozGoPro-Regular_8.otf);
+}
+@font-face {
+	font-family: KozGoPro-Medium;
+    src: url(../fonts/KozGoPro-Medium_8.otf);
+}
+@font-face {
+	font-family: KozGoPro-Heavy;
+    src: url(../fonts/KozGoPro-Heavy_8.otf);
+}
+@font-face {
+	font-family: KozGoPro-ExtraLight;
+    src: url(../fonts/KozGoPro-ExtraLight_8.otf);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: KozGoPro-bold;
+}
+h6,p{
+    font-family: KozGoPro-regular;
+}
+
+a {
+	text-decoration:none;
+	color:#fff;
+	outline:none;
+}
+img {
+	max-width:100%;
+}   
+.width-80{
+   width: 80%;
+   margin: 0 auto;   
+}
+.header-text h2,.header-text h3{
+    text-transform:uppercase;
+    color:#1d1d25;
+}
+.shaddow-box {
+    margin: 50px 0;
+    box-shadow: 0px 0px 40px 15px #dae5ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+section {
+    text-align: center;
+    color:#919197;
+    margin: 50px 0 !important;
+}
+.btn a:hover,.btn a:focus,.btn a:active{
+	color: white;
+	text-decoration: none;
+}
+/*----------------------------------------------------
+	3. Navigation Bar
+------------------------------------------------------*/
+.menu {
+    position: fixed;
+	z-index: 1000;
+	width:100%;
+}
+.nav-bg-show{
+	background-color:#106673;
+}
+nav{
+	background-color:transparent !important;
+	margin-bottom: 0px !important; 
+	width: 85%;
+    margin: 0 auto;
+}
+/*
+#navbarTogglerDemo03{
+	display: block !important;
+}
+*/
+#navbarTogglerDemo03 ul{
+	float: right;
+    position:relative;
+    left: 449px;
+}
+.nav-link{
+	color:#fff !important;
+}
+
+/*----------------------------------------------------
+	3. Header Part
+------------------------------------------------------*/
+header{
+	position:relative;
+}
+.center {
+	backface-visibility: hidden;
+    position: absolute;
+    left: -330px;
+    top: 0px;
+    max-width: none;
+}
+#banner {
+	margin-top: 0px !important;
+}
+.banner{
+	overflow:hidden ;
+	margin:0 auto !important;
+	background:#ffffff;
+	height: 816px !important;
+}
+.patternOverlay {
+	
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+	z-index:9;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.bannerText{
+	position:absolute ;
+	left:10%;
+	top:35%;
+	text-align:left;
+	margin-top:0px;
+	padding:0 ;
+	z-index:999 ;
+}
+.bannerText h1{
+	line-height:90px;
+	color:#fff;
+	font-family: KozGoPro-Heavy;
+	font-size: 98px;
+	margin: 0px;
+}
+.bannerText h2{
+	line-height:30px;
+	color:#fff;
+	font-family: KozGoPro-Heavy;
+	font-size: 36px;
+	margin: 0 0 10px 0;
+}
+.bannerText h3{
+	font-family: KozGoPro-ExtraLight;
+	color:#fff;
+	font-size:22px;
+	line-height:25px;
+	margin: 0px;
+}
+.bannerText .viewportfolio {
+    background-color: #EF5655;
+    color: white;
+	border-radius: 50px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+    padding: 20px 80px;
+	font-size: 14px;
+	margin: 40px 0 0 0;
+}
+/*----------------------------------------------------
+/*--------------------------------------------------------------
+                        About Me Section
+---------------------------------------------------------------*/
+
+section#about-me {
+
+}
+#about-me h2 {
+   margin: 0px;  
+   text-transform: uppercase;
+}
+#about-me h6{
+    margin-bottom: 35px; 
+
+}
+#about-me .btn-about {
+    background-color: #2d88db;
+    color: white;
+	border-radius: 50px;
+	letter-spacing: 1px;
+    padding: 22px 40px;
+	font-size: 14px;
+	margin: 40px 0 0 0;
+}
+
+/*--------------------------------------------------------------
+            Skills and Experties Section
+---------------------------------------------------------------*/
+
+section#skill-exp {
+    text-align: left;
+}
+#skill-exp .shaddow-box {
+	margin: 50px 0 !important;
+	padding: 20px 30px!important;
+}
+.sk-c1 {
+    margin: 50px 0 0 0;
+}
+.sk-c2 {
+    margin: 40px 0 10px 0;
+}
+
+.skillbar2 {
+    position: relative;
+    margin-bottom: 44px;
+}
+.skill-title p {
+    position: absolute;
+    color: #1d1d25 !important;
+}
+.skill-percentage {
+    position: absolute;
+    left: 10%;
+}
+.progress {
+    position: relative;
+    top: 23px;
+    border-radius: 20px;
+    margin: 0 0 50px 0 !important;
+    height: 8px !important;
+}
+.progress-bar{
+    width: 70%;
+    border-radius: 20px;
+    background-color: #ef5756;
+}
+
+/*--------------------------------------------------------------
+                    Work Experiance Section
+---------------------------------------------------------------*/
+
+#exp {
+    margin: 50px 0 !important;
+}
+#exp .width-80{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+ }
+#exp .col-md-7 .shaddow-box {
+    width: 28%;
+    float: left;
+    border-radius: 0px;
+    margin: 30px 0 0 0 !important;
+}
+#exp .shaddow-box2 {
+    width: 28%;
+    float: left;
+    margin: 30px 30px 0 30px !important;
+    box-shadow: 0px 0px 40px 15px #dae5ff;
+    padding: 20px;
+    border-radius: 0px;
+}
+#exp .shaddow-box {
+    margin: 30px 0 0 0 !important;
+}
+#exp .doted {
+    border: 5px;
+    border-color: #C8C8C8;
+    border-style: dashed;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -10%;
+}
+#exp .col-sm-5 p {
+    color: #1C1D26;
+    font-size: 30px;
+    text-align: left;
+	line-height: 33px;
+	position: relative;
+	top: -375px;
+	left: 200px;
+	
+}
+#exp-c2 .shaddow-box {
+	border-radius: 0px!important;
+	position: absolute;
+}
+#exp .col-sm-5 .years {
+	height: 200px;
+	margin: 0 0 73px 0;
+}
+#exp .col-sm-5 span {
+    font-family: KozGoPro-bold;
+    font-size: 150px;
+    color: #7C3CCC;
+    text-align: left;
+    position: relative;
+    left: -70px;
+    top: -200px;
+}
+#exp .col-sm-5 .call span {
+    color: #7C3CCC;
+    font-size: 20px;
+	left: 0px;
+	top: 0px;
+}
+#exp .col-sm-5 .call {
+    background-image: url(../images/call.png);
+    background-size: 73px;
+    background-repeat: no-repeat;
+    height: 73px;
+    color: #1C1D26;
+	font-size: 30px;
+	text-align: left;
+    line-height: 30px;
+    padding-left: 90px;
+}
+
+/*--------------------------------------------------------------
+                    Work Experiance logo
+---------------------------------------------------------------*/
+.enlarge {
+    display:inline-block; /*places the images in a line*/
+    position: relative;
+    z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+}
+.enlarge img {
+	background: #fff;
+}
+.enlarge span {
+    position:absolute;
+    left: -9999px;
+    background-color:#ffffff;
+    padding: 10px;
+    box-shadow: 0px 0px 40px 15px #dae5ff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #797782;
+}
+.enlarge .head {
+	color: #313131;
+	font-weight: bold;
+}
+.enlarge .duration {
+	color: #2d88db;
+}
+.enlarge :hover {
+    z-index: 50;
+    cursor:progress;
+}
+.enlarge span img {
+    padding:2px;
+}
+.enlarge :hover span { 
+    top: -240px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: 0px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+.enlarge .down:hover span { 
+    top: 100px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: 0px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+.enlarge :hover:nth-child(2) span {
+    left: -100px; 
+}
+.enlarge :hover:nth-child(3) span {
+    left: -200px; 
+}
+    
+/*--------------------------------------------------------------
+                         Portfolio Section
+---------------------------------------------------------------*/
+
+section#Port {
+    margin: 100px 0 50px 0 !important;
+}
+#Port .row{
+     
+}
+#Port .slogan p {
+    margin: 30px 0 40px 0;
+}
+#Port .slogan span {
+    color: #29C4A9;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*----------------------------------------------------
+	 8. Protfolio Style
+------------------------------------------------------*/
+.protfolio{
+	background:#fff;
+	width:100%;
+	overflow:hidden;
+}
+.protfolio .row {
+}
+.protfolio .container{
+	padding-top:67px ;
+	padding-bottom:0 ;
+}
+.protfolio .heading {
+	padding-bottom:50px;
+}
+.protfolio .protBox{
+	padding-top:0 ;
+	padding-bottom:0 ;
+	position:relative;
+}
+.protfolio .heading p{
+	padding-bottom:41px;
+	color:#242424
+}
+.protfolio h4{
+	font-weight:700;
+}
+.portfolioFilter{
+	display:block;
+	margin:0 auto;
+	text-align: center;
+}
+.portfolioFilter ul{
+	margin:0 auto;
+	text-align:center;
+	display:block;
+}
+.portfolioFilter ul li{
+	display:inline-block;
+	margin:0 4px;
+}
+.portfolioFilter ul li:after {
+	content:"";
+	display:block;
+	width:1px;
+	height:10px;
+	background:#837D90;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-5px;
+}
+.portfolioFilter ul li.last:after {
+	background:#fff;
+}
+.portfolioFilter ul li a{
+	padding:14px;
+	font-size:14px;
+	line-height:15px;
+	color:#837D90;
+	display:block;
+	text-decoration:none;
+	border-right:none;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+.portfolioFilter ul li a:hover{
+	color:#ffffff;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	background-color: #65737A;
+	border-radius: 30px;
+}
+.portfolioFilter ul li a.current{
+	color:#fff;
+	background-color: #29C4A9;
+	border-radius: 30px;
+}
+ul.portfolioContainer{
+	display:block;
+	padding:0px;
+	margin-bottom:0;
+	list-style-type:none;
+}
+ul.portfolioContainer li{
+	display:block;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	cursor:pointer;
+	border:1px solid #fff;
+	width:24.8%;
+}
+ul.portfolioContainer li .lightCon{
+	display:block;
+	margin:0px;
+	position:relative;
+	overflow:hidden;
+}
+ul.portfolioContainer li img{
+	 width:100% !important;
+	 height:auto;
+	 display:block;
+}
+span.hoverBox{
+	visibility:hidden;
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	background: rgba(76, 64, 78, 0);
+	
+}
+ul.portfolioContainer li:hover span.hoverBox{
+	visibility:visible;
+	left:0px;
+	bottom: 0px;
+	background: rgba(76, 64, 78, 0.9);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+span.hoverBox a{
+	line-height:54px;
+}
+span.hoverBox .smallIcon{
+	width: 74px;
+	margin: 0px auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -80px;
+	margin-top: -37px;
+}
+span.hoverBox .zoom{
+	visibility:hidden;
+	width:74px;
+	height:74px;
+	border:1px solid #fff;
+	color:#fff;
+	position: relative;
+	left:-180%;
+	background:url(../images/plus-icon.png) 50% 50% no-repeat;
+	margin-left:47px;
+	/*top:40%;*/
+	text-align:center;
+	line-height:70px;
+	display: block;
+	float: left;	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;	
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+ul.portfolioContainer li:hover span.hoverBox .zoom{
+	visibility:visible;
+	left:0;
+	padding-top:7px;	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+span.hoverBox .zoom i {
+	font-size:0;
+	text-indent:-100000px;
+}
+
+span.hoverBox .linKed{
+	visibility:hidden;
+	width:54px;
+	height:54px;
+	background:#313131;
+	color:#fff;
+	position: relative;
+	right:-180%;
+	/*top:40%;*/
+	text-align:center;
+	line-height:52px;
+	display: block;
+	float: right;	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;	
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+ul.portfolioContainer li:hover span.hoverBox .linKed{
+	visibility:visible;
+	right:0%;
+	padding-top:7px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+/*--------------------------------------------------------------
+                         Contact Section
+---------------------------------------------------------------*/
+
+section#Cnt {
+	margin: 100px 0 50px 0 !important;
+	background:url(../images/contact-bg.jpg) 50% -200% no-repeat;
+}
+#Cnt .row{
+     
+}
+#Cnt-c2 h4 {
+	text-align: left;
+	font-size: 30px;
+	color: #1C1D26;
+	margin: 40px 0 10px 0;
+}
+#Cnt-c2 h5 {
+	text-align: left;
+	font-size: 24px;
+	color: #1C1D26;
+	margin: 20px 0 10px 0;
+}
+#Cnt-c2 p{
+	text-align: left;
+}
+#Cnt .slogan p {
+    margin: 20px 0 5px 0;
+}
+#Cnt .slogan span {
+    color: #29C4A9;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#Cnt .shaddow-box {
+	margin: 50px 20px !important;
+	padding: 10px 30px !important;
+}
+#Cnt .shaddow-box span {
+	color:#F06665;
+}
+#Cnt .shaddow-box .text {
+	font-size: 14px;
+	color: #1C1D26;
+	text-align: left;
+	margin: 20px 0 5px 0;
+}
+#Cnt .btn-submit {
+    background-color: #F06665;
+    color: white;
+	border-radius: 8px;
+	width: 100%;
+    font-size: 12px;
+	margin: 20px 0;
+	text-transform: uppercase;	
+}
+#Cnt-c2 {
+	color: #837D90;
+	margin: 50px 20px !important;
+    padding: 10px 30px !important;
+}
+#Cnt-c2 .portfolioFilter ul{
+	font-size: 12px;
+}
+#Cnt-c2 .portfolioFilter ul li{
+	background-color: #EBEBEB;
+	border-radius: 30px;
+	margin: 5px 6px 5px 0;
+	float: left;
+}
+#Cnt-c2 .portfolioFilter ul li a {
+	padding: 10px 20px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #837D90;
+}
+#Cnt-c2 .portfolioFilter ul li a.current{
+	color:#fff;
+	background-color: #65737A;
+}
+#Cnt-c2 .portfolioFilter ul li a:hover{
+	color:#ffffff;
+}
+#Cnt-c2 .contact {
+	float: left;
+	padding: 20px 0;
+}
+#Cnt-c2 .contact ul {
+	font-size: 14px;
+}
+#Cnt-c2 .contact ul li {
+	list-style: none;
+	text-align: left;
+	padding: 5px 0 5px 30px;
+	background-position: left;
+}
+#Cnt-c2 ul li a{
+	color:#837D90; 
+}
+#Cnt-c2 li.gmail {
+	background:url(../images/gmail.png) no-repeat;
+	margin: 5px 0; 
+}
+#Cnt-c2 li.skype {
+	background:url(../images/skype.png) no-repeat;
+	margin: 5px 0; 
+}
+#Cnt-c2 li.whatsapp {
+	background:url(../images/whatsapp.png) no-repeat; 
+	margin: 5px 0;
+}
+#Cnt-c2 .portfolioFilter ul{
+	font-size: 12px;
+}
+#Cnt-c2 .portfolioFilter ul li{
+	background-color: #EBEBEB;
+	border-radius: 30px;
+	margin: 5px 6px 5px 0;
+	float: left;
+}
+
+#Cnt-c2 .portfolioFilter ul li a {
+	padding: 10px 20px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #837D90;
+}
